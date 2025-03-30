@@ -33,11 +33,11 @@ class UniversalWaveMode:
         gui_time_grid = self.time[self.time > u_cut]
         if len(gui_time_grid) != 0:
             # Generate gui phase array
-            with open("Data/Polynomials/gui_phase_polynomial.pkl", "rb") as f:
+            with open("Polynomials/gui_phase_polynomial.pkl", "rb") as f:
                 gui_phase_polynomial = pickle.load(f)
             gui_phase = gui_phase_polynomial(gui_time_grid)
 
-            with open("Data/Polynomials/gui_amp_polynomial.pkl", "rb") as f:
+            with open("Polynomials/gui_amp_polynomial.pkl", "rb") as f:
                 gui_amp_polynomial = pickle.load(f)
             gui_amplitude = gui_amp_polynomial(gui_time_grid)
 
@@ -46,14 +46,14 @@ class UniversalWaveMode:
 
         if len(adb_time_grid) != 0:
             # Generate adiabatic phase array
-            with open("Data/Polynomials/adb_phase_polynomial.pkl", "rb") as f:
+            with open("Polynomials/adb_phase_polynomial.pkl", "rb") as f:
                 adb_phase_polynomial = pickle.load(f)
             adiabatic_phase = adb_phase_polynomial(nu * adb_time_grid)
 
             adiabatic_phase *= self.m / self.nu
 
             # Generate adiabatic amplitude array
-            with open("Data/Polynomials/adb_amp_polynomial.pkl", "rb") as f:
+            with open("Polynomials/adb_amp_polynomial.pkl", "rb") as f:
                 adb_amp_polynomial = pickle.load(f)
             adiabatic_amplitude = adb_amp_polynomial(nu * adb_time_grid)
 
