@@ -1,0 +1,20 @@
+# Python bytecode files
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environments
+env/
+venv/
+
+# IDE files
+.vscode/
+.idea/
+
+# Test results
+*.log
+*.coverage
+*.tox
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
