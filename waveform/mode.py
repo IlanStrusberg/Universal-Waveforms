@@ -4,6 +4,7 @@ from time import time
 import pickle
 import os
 import logging
+from os.path import dirname, abspath
 
 logging.basicConfig(
     level=logging.INFO,  # Set to DEBUG for more verbosity
@@ -24,7 +25,7 @@ class UniversalWaveMode:
             parity: str = 'e',
             l: float = 2,
             m: float = 2,
-            polynomial_dir: str = "Polynomials"
+            polynomial_dir: str = dirname(dirname(abspath(__file__))) + "/Polynomials"
     ):
         """
           Initialize the UniversalWaveMode instance and generate the waveform.
