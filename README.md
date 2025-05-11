@@ -32,3 +32,6 @@ To run the tests for this project, make sure you have `pytest` installed and the
 ```bash
 pytest tests/test_waveform.py
 ```
+
+## Liscence
+This project is licensed under the MIT License.

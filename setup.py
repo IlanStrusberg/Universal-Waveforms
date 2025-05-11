@@ -13,6 +13,13 @@ setup(
     long_description_content_type="text/markdown",
     url="https://github.com/IlanStrusberg/Universal-Waveforms.git",
     packages=find_packages(),
+    classifiers=[
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+        "Intended Audience :: Science/Research",
+        "Topic :: Scientific/Engineering :: Physics",
+    ],
     install_requires=[
         "numpy",
         "matplotlib",
