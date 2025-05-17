@@ -33,5 +33,8 @@ To run the tests for this project, make sure you have `pytest` installed and the
 pytest tests/test_waveform.py
 ```
 
+## Data
+The data used to generate the results/code is located in the `Data/` directory.
+
 ## Liscence
 This project is licensed under the MIT License.
